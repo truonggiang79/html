@@ -1,12 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is title</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player Web App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Sản phẩm cuối khóa -->
+  <body>
+    <div class="fake-side-bar"></div>
+
+    <div class="side-bar">
+      <p class="fist-icon-container"><i class="fa-solid fa-ellipsis"></i></p>
+      <div class="icon-container">
+        <!-- ... -->
+        <p class="icon-container" style="font-weight: 500">
+          <i class="fa-solid fa-house" style="color: gray"></i> Home
+        </p>
+        <p class="icon-container" style="font-weight: 500">
+          <i class="fa-solid fa-bars-progress" style="color: gray"></i> Browse
+        </p>
+        <p class="icon-container" style="font-weight: 500">
+          <i class="fa-solid fa-file-image" style="color: gray"></i> Album
+        </p>
+        <p class="icon-container" style="font-weight: 500">
+          <i class="fa-solid fa-user" style="color: gray"></i> Artists
+        </p>
+        <p class="icon-container" style="font-weight: 500">
+          <i class="fa-solid fa-video" style="color: gray"></i> Videos
+        </p>
+        <!-- my music -->
+        <p class="second-icon-container" style="font-weight: 700; color: gray">
+          MY MUSIC
+        </p>
+        <p class="icon-container" style="font-weight: 500">
+          <i class="fa-solid fa-clock" style="color: gray"></i>Recently Played
+        </p>
+        <p class="icon-container" style="font-weight: 500">
+          <i class="fa-solid fa-file" style="color: gray"></i> Local Files
+        </p>
+        <!-- playlist -->
+        <p class="second-icon-container" style="font-weight: 700; color: gray">
+          PLAYLIST
+        </p>
+        <p class="icon-container" style="font-weight: 500">General Playlist</p>
+        <p class="icon-container" style="font-weight: 500">Ease up beats</p>
+        <p class="icon-container" style="font-weight: 500">Pop songs</p>
+        <p class="icon-container" style="font-weight: 500">Mood swings</p>
+      </div>
+    </div>
+
+    <div class="main">
+      <!-- side3 -->
+      <div class="nav-bar">
+        <a href="#">
+          <p class="icon-nav-bar"><i class="fa-solid fa-bars"></i></p>
+        </a>
+        <div class="container-1">
+          <span class="icon"><i class="fa fa-search"></i></span>
+          <input type="search" id="search" placeholder="Search" />
+        </div>
+        <hr />
+      </div>
+
+      <div class="list">
+        <hr />
+        <div class="list-header">
+          <h3>Top Artists</h3>
+          <h6 style="margin-left: 5px">- Top 50</h6>
+        </div>
+        <div class="poster-container">
+          <div class="poster">
+            <div>
+              <a
+                href="https://vi.wikipedia.org/wiki/Post_Malone"
+                target="_blank"
+              >
+                <img
+                  src="https://wallpaperaccess.com/full/3308174.jpg"
+                  width="100%"
+                  alt=""
+              /></a>
+              <div class="singer-name">
+                <h5>Stoney</h5>
+                <h6>Post Malone</h6>
+              </div>
+            </div>
+          </div>
+          <div class="poster">
+            <div>
+              <a
+                href="https://vi.wikipedia.org/wiki/Troye_Sivan"
+                target="_blank"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/vi/3/38/Troye_Sivan_-_Blue_Neighbourhood.png"
+                  width="100%"
+                  alt=""
+              /></a>
+              <div class="singer-name">
+                <h5>Blue Neighbour</h5>
+                <h6>Troye Sivan</h6>
+              </div>
+            </div>
+          </div>
+          <div class="poster">
+            <div>
+              <a
+                href="https://vi.wikipedia.org/wiki/Juice_Wrld"
+                target="_blank"
+              >
+                <img
+                  src="https://static.metacritic.com/images/products/music/9/0c3408d2e04c3a93a055a3ff0faba1ef.jpg"
+                  width="100%"
+                  alt=""
+              /></a>
+              <div class="singer-name">
+                <h5>Robbery</h5>
+                <h6>Juice wrld</h6>
+              </div>
+            </div>
+          </div>
+          <div class="poster">
+            <div>
+              <a
+                href="https://vi.wikipedia.org/wiki/Kate_Hudson"
+                target="_blank"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/a/ab/The_Greatest_%28featuring_Kendrick_Lamar%29_%28Official_Single_Cover%29_by_Sia.png"
+                  width="100%"
+                  alt=""
+              /></a>
+              <div class="singer-name">
+                <h5>The Greatest</h5>
+                <h6>Kate Hudson</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Song -->
+      <div class="song">
+        <!-- div1 -->
+        <div class="song-wrapper-container">
+          <h3 class="title-song">Now Playing</h3>
+          <div class="song-wrapper">
+            <div class="poster-diff">
+              <img
+                src="https://avatar-ex-swe.nixcdn.com/song/2017/05/19/0/4/d/e/1495165419572_640.jpg"
+                width="190px"
+              />
+            </div>
+            <div class="progress-wrapper">
+              <div class="progress-time">
+                <span class="progress-time-current">00:00</span>
+                <span>/</span>
+                <span class="progress-time-duration">00:00</span>
+              </div>
+              <div class="progress-bar">
+                <input
+                  type="range"
+                  class="progress-dot"
+                  min="0"
+                  max="100"
+                  value="0"
+                />
+                <div class="progress-current"></div>
+              </div>
+            </div>
+            <div class="controls">
+              <div>
+                <i class="prev fas fa-backward"></i>
+              </div>
+              <div>
+                <i class="pause fas fa-pause"></i>
+              </div>
+              <div>
+                <i class="next fas fa-forward"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- div2 -->
+
+        <div class="music-charts">
+          <div class="row music-charts-header">
+            <h3 class="music-charts-title">
+              Mostly Played <i class="fa-solid fa-heart" style="color: red"></i>
+            </h3>
+            <h6 class="h6-2">55 song on the list</h6>
+            <p class="icon-play-h6">
+              <i class="fa-solid fa-square-caret-down"></i>
+            </p>
+          </div>
+          <div class="song-popular">
+            <p class="song-index">01</p>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/7/72/Stoneyalbum.jpg"
+              class="song-popular-poster"
+              alt=""
+            />
+            <p class="song-play-icon"><i class="fa-solid fa-play"></i></p>
+            <p class="song-name">Rockstar</p>
+            <p class="song-author">Post malone</p>
+            <p class="song-duration">4:31</p>
+            <p class="song-wave-icon">
+              <i class="fa-solid fa-chart-simple"></i>
+            </p>
+          </div>
+          <div class="song-popular">
+            <p class="song-index">02</p>
+            <img
+              src="https://cdn.albumoftheyear.org/album/311123-coco.jpg"
+              class="song-popular-poster"
+              alt=""
+            />
+            <p class="song-play-icon"><i class="fa-solid fa-play"></i></p>
+            <p class="song-name">Coco</p>
+            <p class="song-author">24kgoldn</p>
+            <p class="song-duration">4:05</p>
+            <p class="song-wave-icon">
+              <i class="fa-solid fa-chart-simple"></i>
+            </p>
+          </div>
+          <div class="song-popular">
+            <p class="song-index">03</p>
+            <img
+              src="https://i1.sndcdn.com/artworks-000055848487-5ugt10-t500x500.jpg"
+              class="song-popular-poster"
+              alt=""
+            />
+            <p class="song-play-icon"><i class="fa-solid fa-play"></i></p>
+            <p class="song-name">Been on</p>
+            <p class="song-author">G-Eazy</p>
+            <p class="song-duration">3:22</p>
+            <p class="song-wave-icon">
+              <i class="fa-solid fa-chart-simple"></i>
+            </p>
+          </div>
+          <div class="song-popular">
+            <p class="song-index">04</p>
+            <img
+              src="https://m.media-amazon.com/images/I/91U-b9Kuk4L._AC_SL1500_.jpg"
+              class="song-popular-poster"
+              alt=""
+            />
+            <p class="song-play-icon"><i class="fa-solid fa-play"></i></p>
+            <p class="song-name">Takeoff</p>
+            <p class="song-author">Migos ATL</p>
+            <p class="song-duration">3:57</p>
+            <p class="song-wave-icon">
+              <i class="fa-solid fa-chart-simple"></i>
+            </p>
+          </div>
+          <div class="song-popular">
+            <p class="song-index">05</p>
+            <img
+              src="https://i.pinimg.com/736x/d5/59/b4/d559b418bdd86fcd4f12b4934d6f1d12.jpg"
+              class="song-popular-poster"
+              alt=""
+            />
+            <p class="song-play-icon"><i class="fa-solid fa-play"></i></p>
+            <p class="song-name">My Stress</p>
+            <p class="song-author">NF Real music</p>
+            <p class="song-duration">4:18</p>
+            <p class="song-wave-icon">
+              <i class="fa-solid fa-chart-simple"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
